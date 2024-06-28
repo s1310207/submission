@@ -28,5 +28,9 @@ else if (j[i] == 1) {
 
 printf("Heads: %d, Tails: %d\n", heads_count, tails_count);
 
+if(heads_count > tails_count) printf("You won!");
+else printf("You lost!");
+
+
 return 0;
 }
