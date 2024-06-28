@@ -10,6 +10,10 @@ for(i=0;i<3;i++){
 j[i] = rand() % 2;
 }
 
+char name[50];
+printf("Who are you?\n");
+scanf("%s", name);
+printf("Hello, %s!\n", name);
 
 printf("Tossing a coin...\n");
 
