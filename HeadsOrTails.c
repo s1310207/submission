@@ -10,6 +10,11 @@ for(i=0;i<3;i++){
 j[i] = rand() % 2;
 }
 
+char name[50];
+printf("Who are you?\n");
+scanf("%s", name);
+printf("Hello, %s!\n", name);
+
 
 printf("Tossing a coin...\n");
 
@@ -28,8 +33,8 @@ else if (j[i] == 1) {
 
 printf("Heads: %d, Tails: %d\n", heads_count, tails_count);
 
-if(heads_count > tails_count) printf("You won!");
-else printf("You lost!");
+if(heads_count > tails_count) printf("%s won!", name);
+else printf("%s lost!", name);
 
 
 return 0;
